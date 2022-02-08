@@ -1,8 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
+import loginReducer from '../components/Login/loginSlice'
 
 export const store = configureStore({
     reducer: {
-        counter: () => {},
+        login: loginReducer,
     },
 })
 
